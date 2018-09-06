@@ -36,7 +36,7 @@ public class HeartHandler extends ChannelInboundHandlerAdapter {
             IdleStateEvent event = (IdleStateEvent) evt;
             IdleState state = event.state();
             if (state == IdleState.WRITER_IDLE || state == IdleState.ALL_IDLE) {
-                ctx.writeAndFlush(new CmppActiveTest());
+                client.submit(new CmppActiveTest());
                 System.out.println("心跳启动!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             }
         } else {
