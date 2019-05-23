@@ -12,4 +12,4 @@ Main.java 是入口。
 
 代码已经缩减的很简单了（还是有心跳，重连机制的），主要还是先熟悉CMPP协议要求。
 
-如果存在疑问，可以联系我
+如果存在疑问，可以联系我 Email :weixianginay@oulook.com
